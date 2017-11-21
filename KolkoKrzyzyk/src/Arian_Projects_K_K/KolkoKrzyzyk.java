@@ -1,5 +1,6 @@
 package Arian_Projects_K_K;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.Border;
@@ -20,6 +21,7 @@ public class KolkoKrzyzyk extends JFrame {
 	private Color colorX=new Color(252, 28, 20);//Swietlisty pomarańcz
 	private Color colorO=new Color(230, 28, 102);//Amarant
 	private Color colorW=new Color(51, 0, 204);//Chabrowy
+	
 	
 	static JPanel panel = new JPanel(); // tworzy pole na klawiaturę w formularzu
     static JLabel lblPlayerX =new JLabel("Wynik gracza X :"); // tworzy pole tekstowe
@@ -106,6 +108,13 @@ public class KolkoKrzyzyk extends JFrame {
 					button2.setBackground(colorW);
 					button3.setBackground(colorW);
 					JOptionPane.showMessageDialog(this, "Gracz X wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					ImageIcon icon = new ImageIcon("res/SP7.png");
+					button1.setIcon(icon);
+					button1.setVerticalTextPosition(JButton.TOP);
+					button1.setHorizontalTextPosition(JButton.CENTER);
+					button2.setBackground(colorW);
+					button3.setBackground(colorW);
+					
 					xCounter++;
 					gameScore();
 				}
