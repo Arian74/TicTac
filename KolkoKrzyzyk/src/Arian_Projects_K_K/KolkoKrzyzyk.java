@@ -173,6 +173,89 @@ public class KolkoKrzyzyk extends JFrame {
 					xCounter++;
 					gameScore();
 				}
+	// "O"-----------------------------------------------------------------------------------------
+
+				if(( b1==("O") && b2==("O") && b3==("O"))||( b1==("O") && b3==("O") && b2==("O"))||( b2==("O") && b3==("O") && b1==("O"))
+				  ||( b3==("O") && b2==("O") && b1==("O"))||( b3==("O") && b1==("O") && b2==("O")||( b2==("O") && b1==("O") && b3==("O")))) 
+				{
+					button1.setBackground(colorW);
+					button2.setBackground(colorW);
+					button3.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b4==("O") && b5==("O") && b6==("O"))||( b4==("O") && b6==("O") && b5==("O"))||( b5==("O") && b6==("O") && b4==("O"))
+				  ||( b6==("O") && b5==("O") && b4==("O"))||( b6==("O") && b4==("O") && b5==("O")||( b5==("O") && b4==("O") && b6==("O")))) 
+				{
+					button4.setBackground(colorW);
+					button5.setBackground(colorW);
+					button6.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b7==("O") && b8==("O") && b9==("O"))||( b7==("O") && b9==("O") && b8==("O"))||( b8==("O") && b9==("O") && b7==("O"))
+				  ||( b9==("O") && b8==("O") && b7==("O"))||( b9==("O") && b7==("O") && b8==("O")||( b8==("O") && b7==("O") && b9==("O")))) 
+				{
+					button7.setBackground(colorW);
+					button8.setBackground(colorW);
+					button9.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+			
+				if(( b1==("O") && b4==("O") && b7==("O"))||( b1==("O") && b7==("O") && b4==("O"))||( b4==("O") && b7==("O") && b1==("O"))
+				  ||( b7==("O") && b4==("O") && b1==("O"))||( b7==("O") && b1==("O") && b4==("O")||( b4==("O") && b1==("O") && b7==("O")))) 
+				{
+					button1.setBackground(colorW);
+					button4.setBackground(colorW);
+					button7.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b2==("O") && b5==("O") && b8==("O"))||( b2==("O") && b8==("O") && b5==("O"))||( b5==("O") && b8==("O") && b2==("O"))
+				  ||( b8==("O") && b5==("O") && b2==("O"))||( b8==("O") && b2==("O") && b5==("O")||( b5==("O") && b2==("O") && b8==("O")))) 
+				{
+					button2.setBackground(colorW);
+					button5.setBackground(colorW);
+					button8.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b3==("O") && b6==("O") && b9==("O"))||( b3==("O") && b9==("O") && b6==("O"))||( b6==("O") && b9==("O") && b3==("O"))
+				  ||( b9==("O") && b6==("O") && b3==("O"))||( b9==("O") && b3==("O") && b6==("O")||( b6==("O") && b3==("O") && b9==("O")))) 
+				{
+					button3.setBackground(colorW);
+					button6.setBackground(colorW);
+					button9.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b1==("O") && b5==("O") && b9==("O"))||( b1==("O") && b9==("O") && b5==("O"))||( b5==("O") && b9==("O") && b1==("O"))
+				  ||( b9==("O") && b5==("O") && b1==("O"))||( b9==("O") && b1==("O") && b5==("O")||( b5==("O") && b1==("O") && b9==("O")))) 
+				{
+					button1.setBackground(colorW);
+					button5.setBackground(colorW);
+					button9.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
+				if(( b3==("O") && b5==("O") && b7==("O"))||( b3==("O") && b7==("O") && b5==("O"))||( b5==("O") && b7==("O") && b3==("O"))
+				  ||( b7==("O") && b5==("O") && b3==("O"))||( b7==("O") && b3==("O") && b5==("O")||( b5==("O") && b3==("O") && b7==("O")))) 
+				{
+					button3.setBackground(colorW);
+					button5.setBackground(colorW);
+					button7.setBackground(colorW);
+					JOptionPane.showMessageDialog(this, "Gracz O wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					oCounter++;
+					gameScore();
+				}
 		}
 	
 		private void initComponents() 
@@ -185,7 +268,7 @@ public class KolkoKrzyzyk extends JFrame {
 			button1.setFont(tfont1);
 			button1.setForeground(Color.black);
 			button1.setBackground(color);
-			button1.setBounds(4	, 4, 200, 200);
+			button1.setBounds(5	, 5, 200, 200);
 			button1.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -205,12 +288,12 @@ public class KolkoKrzyzyk extends JFrame {
 			 });
 			
 			panel.add(button2);
-			button2.setHorizontalAlignment(SwingConstants.RIGHT);
+			button2.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont2=new Font("Arial", Font.BOLD,110);
 			button2.setFont(tfont2);
 			button2.setForeground(Color.black);
 			button2.setBackground(color);
-			button2.setBounds(201, 4, 200, 200);
+			button2.setBounds(206, 5, 200, 200);
 			button2.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -230,12 +313,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 			
 			panel.add(button3);
-			button3.setHorizontalAlignment(SwingConstants.RIGHT);
+			button3.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont3=new Font("Arial", Font.BOLD,110);
 			button3.setFont(tfont3);
 			button3.setForeground(Color.black);
 			button3.setBackground(color);
-			button3.setBounds(401, 4, 200, 200);
+			button3.setBounds(407, 5, 200, 200);
 			button3.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -255,12 +338,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 		//II button line :D-----------------------------------------------------------------------
 			panel.add(button4);
-			button1.setHorizontalAlignment(SwingConstants.RIGHT);
+			button4.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont4=new Font("Arial", Font.BOLD,110);
 			button4.setFont(tfont4);
 			button4.setForeground(Color.black);
 			button4.setBackground(color);
-			button4.setBounds(4	, 201, 200, 200);
+			button4.setBounds(5	, 206, 200, 200);
 			button4.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -280,12 +363,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 			
 			panel.add(button5);
-			button5.setHorizontalAlignment(SwingConstants.RIGHT);
+			button5.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont5=new Font("Arial", Font.BOLD,110);
 			button5.setFont(tfont5);
 			button5.setForeground(Color.black);
 			button5.setBackground(color);
-			button5.setBounds(201, 201, 200, 200);
+			button5.setBounds(206, 206, 200, 200);
 			button5.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -305,12 +388,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 			
 			panel.add(button6);
-			button6.setHorizontalAlignment(SwingConstants.RIGHT);
+			button6.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont6=new Font("Arial", Font.BOLD,110);
 			button6.setFont(tfont6);
 			button6.setForeground(Color.black);
 			button6.setBackground(color);
-			button6.setBounds(401, 201, 200, 200);
+			button6.setBounds(407, 206, 200, 200);
 			button6.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -330,12 +413,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 		// III button line :D--------------------------------------------------------------------------			
 			panel.add(button7);
-			button7.setHorizontalAlignment(SwingConstants.RIGHT);
+			button7.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont7=new Font("Arial", Font.BOLD,110);
 			button7.setFont(tfont7);
 			button7.setForeground(Color.black);
 			button7.setBackground(color);
-			button7.setBounds(4	, 401, 200, 200);
+			button7.setBounds(5	, 407, 200, 200);
 			button7.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -355,12 +438,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 			
 			panel.add(button8);
-			button8.setHorizontalAlignment(SwingConstants.RIGHT);
+			button8.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont8=new Font("Arial", Font.BOLD,110);
 			button8.setFont(tfont8);
 			button8.setForeground(Color.black);
 			button8.setBackground(color);
-			button8.setBounds(201, 401, 200, 200);
+			button8.setBounds(206, 407, 200, 200);
 			button8.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -380,12 +463,12 @@ public class KolkoKrzyzyk extends JFrame {
 			});
 			
 			panel.add(button9);
-			button9.setHorizontalAlignment(SwingConstants.RIGHT);
+			button9.setVerticalTextPosition(AbstractButton.CENTER);
 			Font tfont9=new Font("Arial", Font.BOLD,110);
 			button9.setFont(tfont9);
 			button9.setForeground(Color.black);
 			button9.setBackground(color);
-			button9.setBounds(401, 401, 200, 200);
+			button9.setBounds(407, 407, 200, 200);
 			button9.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
@@ -409,7 +492,7 @@ public class KolkoKrzyzyk extends JFrame {
 	{
 				
 		KolkoKrzyzyk tictac= new KolkoKrzyzyk("Kółko Krzyżyk ver 1.0");
-		tictac.setSize(1021,644);
+		tictac.setSize(1030,651);
 		tictac.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		tictac.setVisible(true);
 		tictac.setLocationRelativeTo(null);
@@ -435,7 +518,7 @@ public class KolkoKrzyzyk extends JFrame {
 				Font tfontC=new Font("Arial", Font.BOLD,33);
 				buttonClear.setFont(tfontC);
 				buttonClear.setForeground(Color.black);
-				buttonClear.setBounds(601, 401, 200, 200);
+				buttonClear.setBounds(608, 407, 200, 200);
 				buttonClear.addActionListener(new ActionListener() 
 				{
 					public void actionPerformed(ActionEvent e) 
@@ -466,7 +549,7 @@ public class KolkoKrzyzyk extends JFrame {
 			Font tfontE=new Font("Arial", Font.BOLD,33);
 			buttonExit.setFont(tfontE);
 			buttonExit.setForeground(Color.black);
-			buttonExit.setBounds(801, 401, 200, 200);
+			buttonExit.setBounds(809, 407, 200, 200);
 			buttonExit.addActionListener(new ActionListener() 
 			{
 				public void actionPerformed(ActionEvent e) 
