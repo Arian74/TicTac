@@ -1,9 +1,7 @@
 package Arian_Projects_K_K;
 
 import javax.swing.*;
-import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
-import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.Border;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -29,15 +27,24 @@ public class KolkoKrzyzyk extends JFrame {
     JLabel jlblPlayerX =new JLabel(); // tworzy pole tekstowe
     JLabel jlblPlayerO =new JLabel(); // tworzy pole tekstowe
     
-    static JButton button1=new JButton("");
-    static JButton button2=new JButton("");
-    static JButton button3=new JButton("");
-    static JButton button4=new JButton("");
-    static JButton button5=new JButton("");
-    static JButton button6=new JButton("");
-    static JButton button7=new JButton("");
-    static JButton button8=new JButton("");
-    static JButton button9=new JButton("");
+    static JButton button1 = new RoundButton("");
+    static JButton button2 = new RoundButton("");
+    static JButton button3 = new RoundButton("");
+    static JButton button4 = new RoundButton("");
+    static JButton button5 = new RoundButton("");
+    static JButton button6 = new RoundButton("");
+    static JButton button7 = new RoundButton("");
+    static JButton button8 = new RoundButton("");
+    static JButton button9 = new RoundButton("");
+   // static JButton button1=new JButton("");
+   // static JButton button2=new JButton("");
+   // static JButton button3=new JButton("");
+   // static JButton button4=new JButton("");
+   // static JButton button5=new JButton("");
+   // static JButton button6=new JButton("");
+   // static JButton button7=new JButton("");
+   // static JButton button8=new JButton("");
+   // static JButton button9=new JButton("");
     static JButton buttonClear=new JButton("RESET");
     static JButton buttonExit=new JButton("EXIT");
     public static JFrame frame ;
