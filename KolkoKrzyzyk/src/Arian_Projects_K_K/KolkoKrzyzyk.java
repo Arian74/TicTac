@@ -17,8 +17,9 @@ public class KolkoKrzyzyk extends JFrame {
 	private static String startGame="X";
 	private int xCounter=0;
 	private int oCounter=0;
-	
-	
+	private int red1=51;
+	private int green1=0;
+	private int blue1=204;
 	
 	static JPanel panel = new JPanel(); // tworzy pole na klawiaturę w formularzu
     static JLabel lblPlayerX =new JLabel("Wynik gracza X :"); // tworzy pole tekstowe
@@ -79,13 +80,33 @@ public class KolkoKrzyzyk extends JFrame {
 		if(( b1==("X") && b2==("X") && b3==("X"))||( b1==("X") && b3==("X") && b2==("X"))||( b2==("X") && b3==("X") && b1==("X"))
 			||( b3==("X") && b2==("X") && b1==("X"))||( b3==("X") && b1==("X") && b2==("X")||( b2==("X") && b1==("X") && b3==("X")))) 
 		{
-			button1.setBackground(Color.orange);
-			button2.setBackground(Color.orange);
-			button3.setBackground(Color.orange);
+			button1.setBackground(Color.BLUE);
+			button2.setBackground(Color.BLUE);
+			button3.setBackground(Color.BLUE);
 			JOptionPane.showMessageDialog(this, "Gracz X wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
 			xCounter++;
 			gameScore();
 		}
+		if(( b4==("X") && b5==("X") && b6==("X"))||( b4==("X") && b6==("X") && b5==("X"))||( b5==("X") && b6==("X") && b4==("X"))
+				||( b6==("X") && b5==("X") && b4==("X"))||( b6==("X") && b4==("X") && b5==("X")||( b5==("X") && b4==("X") && b6==("X")))) 
+			{
+				button4.setBackground(Color.BLUE);
+				button5.setBackground(Color.BLUE);
+				button6.setBackground(Color.BLUE);
+				JOptionPane.showMessageDialog(this, "Gracz X wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+				xCounter++;
+				gameScore();
+			}
+		if(( b7==("X") && b8==("X") && b9==("X"))||( b7==("X") && b9==("X") && b8==("X"))||( b8==("X") && b9==("X") && b7==("X"))
+				||( b9==("X") && b8==("X") && b7==("X"))||( b9==("X") && b7==("X") && b8==("X")||( b8==("X") && b7==("X") && b9==("X")))) 
+			{
+				button7.setBackground(Color.BLUE);
+				button8.setBackground(Color.BLUE);
+				button9.setBackground(Color.BLUE);
+				JOptionPane.showMessageDialog(this, "Gracz X wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+				xCounter++;
+				gameScore();
+			}
 	/*	
 		String b1=button1.getText();
 		String b2=button2.getText();
