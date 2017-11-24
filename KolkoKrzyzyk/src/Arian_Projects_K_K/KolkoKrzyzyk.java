@@ -4,9 +4,10 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.Border;
-import java.awt.Color;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.geom.Ellipse2D;
 import java.awt.*;
 
 
@@ -38,15 +39,6 @@ public class KolkoKrzyzyk extends JFrame {
     static JButton button7 = new RoundButton("");
     static JButton button8 = new RoundButton("");
     static JButton button9 = new RoundButton("");
-   // static JButton button1=new JButton("");
-   // static JButton button2=new JButton("");
-   // static JButton button3=new JButton("");
-   // static JButton button4=new JButton("");
-   // static JButton button5=new JButton("");
-   // static JButton button6=new JButton("");
-   // static JButton button7=new JButton("");
-   // static JButton button8=new JButton("");
-   // static JButton button9=new JButton("");
     static JButton buttonClear=new JButton("RESET");
     static JButton buttonExit=new JButton("EXIT");
     public static JFrame frame ;
@@ -73,7 +65,7 @@ public class KolkoKrzyzyk extends JFrame {
 		panel.add(jlblPlayerX);
 		jlblPlayerX.setText(String.valueOf(xCounter));
 		jlblPlayerX.setHorizontalAlignment(SwingConstants.RIGHT);
-		Font tfontX=new Font("Arial", Font.BOLD,33);
+		Font tfontX=new Font("Harrington", Font.BOLD,33);
 		jlblPlayerX.setFont(tfontX);
 		jlblPlayerX.setForeground(Color.black);
 		jlblPlayerX.setBounds(601, 225 ,325 ,50);
@@ -81,7 +73,7 @@ public class KolkoKrzyzyk extends JFrame {
 		panel.add(jlblPlayerO);
 		jlblPlayerO.setText(String.valueOf(oCounter));
 		jlblPlayerO.setHorizontalAlignment(SwingConstants.RIGHT);
-		Font tfontO=new Font("Arial", Font.BOLD,33);
+		Font tfontO=new Font("Harrington", Font.BOLD,33);
 		jlblPlayerO.setFont(tfontO);
 		jlblPlayerO.setForeground(Color.black);
 		jlblPlayerO.setBounds(601, 300 ,325 ,50);
@@ -108,12 +100,20 @@ public class KolkoKrzyzyk extends JFrame {
 					button2.setBackground(colorW);
 					button3.setBackground(colorW);
 					JOptionPane.showMessageDialog(this, "Gracz X wygrywa", "", JOptionPane.INFORMATION_MESSAGE);
+					button1.setText(null);
+	            	button2.setText(null);
+	            	button3.setText(null);
 					ImageIcon icon = new ImageIcon("res/SP7.png");
 					button1.setIcon(icon);
-					button1.setVerticalTextPosition(JButton.TOP);
+					button1.setVerticalTextPosition(JButton.CENTER);
 					button1.setHorizontalTextPosition(JButton.CENTER);
-					button2.setBackground(colorW);
-					button3.setBackground(colorW);
+					button2.setIcon(icon);
+					button2.setVerticalTextPosition(JButton.CENTER);
+					button2.setHorizontalTextPosition(JButton.CENTER);
+					button3.setIcon(icon);
+					button3.setVerticalTextPosition(JButton.CENTER);
+					button3.setHorizontalTextPosition(JButton.CENTER);
+					
 					
 					xCounter++;
 					gameScore();
@@ -280,7 +280,7 @@ public class KolkoKrzyzyk extends JFrame {
 		//I button line :D--------------------------------------------------------------------
 			panel.add(button1);
 			button1.setVerticalTextPosition(AbstractButton.CENTER);
-			Font tfont1=new Font("Arial", Font.BOLD,110);
+			Font tfont1=new Font("Harrington", Font.BOLD,110);
 			button1.setFont(tfont1);
 			button1.setForeground(Color.black);
 			button1.setBackground(color);
@@ -558,6 +558,10 @@ public class KolkoKrzyzyk extends JFrame {
 		            	button7.setBackground(color);
 		            	button8.setBackground(color);
 		            	button9.setBackground(color);
+		            		            	
+		            	button1.setIcon(null);
+		            	button2.setIcon(null);
+		            	button3.setIcon(null);
 		            }
 			});
 			
@@ -582,14 +586,4 @@ public class KolkoKrzyzyk extends JFrame {
 
 
 
-
-
-
-	
-	
-
-
-
-	
-	
 
